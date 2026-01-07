@@ -59,4 +59,38 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 .navigation a:hover{
     background-color: wheat;
 }
+footer{
+    background-color: #eee;
+    padding: 1rem 10px;
+    text-align: center;
+}
+.social{
+ display: flex;
+ justify-content: center;
+ column-gap: 8px;
+ 
+}
+.social a{
+ display:flex;
+ border: 1px solid #ccc;
+ justify-content: center;
+ align-items: center;
+ width: 44px;
+ height: 44px;
+ border-radius: 3px;
+ 
 
+}
+.social img{
+display: block;
+width: 22px;
+height: 22px;
+}
+.social a:hover{
+    background-color: #ddd;
+}
+h1{
+    font-size: 1.1rem;
+    font-family: tahoma;
+    color: chocolate;
+}
