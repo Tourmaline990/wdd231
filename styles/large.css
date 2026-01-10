@@ -3,6 +3,9 @@
         grid-template-columns: 24px auto;
         padding: 15px 0 0 0;
     }
+    header img{
+     margin-bottom: 2px;
+    }
     .nav-menu{
         display: none;
     }
