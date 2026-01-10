@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Homepage</title>
+    <meta name="author" content="Agbetoba Aliya">
+    <meta name="description" content="Landing page for WDD231">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script  src="scripts/index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+   <header>
+     <img src="images/backpack.svg" alt="Site's Logo">
+     <span>Agbetoba Aliya</span>
+     <button aria-label="Hamburger Menu" id="ham-btn" class="nav-menu" aria-expanded="false"></button>
+   </header>
+   <nav>
+     <ul id="navs" class="navigate">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="">Chamber Project</a></li>
+        <li><a href="">Final Project</a></li>
+     </ul>
+   </nav>
+   <main class="container">
+      <h1>Home</h1>
+      <section class="about">
+         <h2>About Me</h2>
+        <p>My name is Aliya Agbetoba. I am from Lagos State, Nigeria. I am the firstborn in my family, with one younger sibling. I enjoy solitude, spending time in nature, and, most importantly, learning and evolving. I have been dedicating quality time to better understand the skills I am honing, and I look forward to making a difference with the knowledge I accumulate.
+
+       </p>
+      </section>
+       <section  class="photo">
+        <h2>Student's Photo</h2>
+        <div class="image">
+        <img src="images/phone_img.webp" alt="Student's image" loading="lazy">
+        </div>
+       </section>
+       <section class="web">
+        <h2>Web Certificate Courses</h2>
+        <div class="b">
+        <button id= "all" aria-label="all courses">All</button>
+        <button id="wdd" aria-label="Wdd courses">WDD</button>
+        <button  id="cse"aria-label="Cse courses">CSE</button>
+        </div>
+        <div id="space"></div>
+       </section>
+   </main> 
+   <footer>
+     <div class="social">
+        <a href="" target="_blank"><img src="images/linkedin.svg" alt=""  width="16" height="16"></a>
+        <a href="" target="_blank"><img src="images/github.svg" alt=""  width="16" height="16"></a>
+         <a href="" target="_blank"><img src="images/twitter-x.svg" alt=""  width="16" height="16"></a>
+      </div>
+      <p>©️<span id="year"></span> Agbetoba Aliya,  Nigeria</p>
+      <p>Last Updated: <span id="modified"></span></p>
+
+   </footer>
+</body>
+</html>
