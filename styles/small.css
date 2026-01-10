@@ -174,7 +174,7 @@ section p{
     background-color: var(--color_1);
     color: #f1f1f1;
 }
-#space{
+#space.show{
     display: flex;
     flex-direction: column;
     padding: 10px 10px;
@@ -200,3 +200,19 @@ section p{
 #space button.true{
         background-color: #bbb;
     }
+#all::after,
+#wdd::after,
+#cse::after{
+    content: "▼";
+    display: inline-block;
+    margin-left: 4px; 
+    transition: transform 0.3s ease-out;
+}
+#space{
+    display: none;
+}
+#all.show::after,
+#wdd.show::after,
+#cse.show::after{
+    transform: rotate(180deg);
+}

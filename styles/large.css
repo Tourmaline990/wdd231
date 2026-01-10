@@ -42,10 +42,13 @@
         grid-column: 3/4;
         grid-row: 2;
     }
-    #space{
+    #space.show{
         display: grid;
         grid-template-columns: 1fr 1fr  1fr;
          column-gap: 8px;
+    }
+    .space{
+        display: none;
     }
     #space p{
         grid-column: 1/4;

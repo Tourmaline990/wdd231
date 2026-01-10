@@ -123,13 +123,20 @@ function read_course(courses){
 
 
 all.addEventListener('click',()=>{
+  
     read_course(courses);
+    space.classList.toggle('show');
+    all.classList.toggle('show');
 })
 wdd.addEventListener('click',()=>{{
     const result = courses.filter(course => course.subject === 'WDD')
       read_course(result)
+      space.classList.toggle('show');
+      wdd.classList.toggle('show');
 }})
 cse.addEventListener('click',()=>{
     let c  = courses.filter(course => course.subject === 'CSE')
     read_course(c)
+    space.classList.toggle('show');
+    cse.classList.toggle('show');
 })
