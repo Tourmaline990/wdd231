@@ -1,0 +1,19 @@
+{
+    "family_name":"Agbetoba",
+    "date":"1-12-2026",
+    "num_in_fam": 16,
+    "if visited by bishopric": true,
+    "individual_data":
+    [
+        {
+        "name":"Aliya",
+        "gender":"F",
+        "birthDate":"04-10-2007"
+       },
+       {
+        "name": "Azeez",
+        "gender":"M",
+        "birthDate":"02-04-2013"
+       }
+    ]
+}

@@ -1,0 +1,65 @@
+:root{
+    --font: 'Roboto','san serif';
+    --color: #191970;
+}
+
+
+header,footer{
+ text-align: center;
+ margin: 0;
+ padding: 0;
+ color: var(--color);
+ font-family: var(--font);
+ text-shadow: 0 0 30px black;
+ border-bottom: 1px solid #ccc;
+}
+main{
+    
+    margin: 0 auto;
+}
+#cards{
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+column-gap: 8px;
+}
+#cards section{
+    display: flex;
+    flex-direction: column;
+    background-color: #ccc;
+  align-items: center;
+  margin: 0.5rem;
+  padding: 0.8rem;
+  
+  
+}
+section h2{
+    color: var(--color);
+    font-family: var(--font);
+    text-shadow: 0 0  30px black;
+    font-size: 1.5rem;
+}
+section p{
+    color: var(--color);
+    font-family: var(--font);
+    font-weight: 400;
+    margin: 0;
+    padding-bottom: 0.8rem;
+}
+section img{
+   display: block;
+   width: auto;
+   max-width: 280px;
+   height: auto;
+   box-shadow: 2px 3px 3px black;
+   border: 1px solid white;
+   object-fit: cover;
+   aspect-ratio: 1/1;
+   
+}
+footer{
+    border: none;
+    border-top: 1px solid #ccc;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+}
