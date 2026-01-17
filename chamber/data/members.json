@@ -1,0 +1,67 @@
+{
+"companies":[
+    {
+      "companyName":"Urban Build",
+      "companyAddress":"123 Innovation Drive, Lagos, Nigeria",
+      "companyPhoneNumber":"+234 701 234 5678",
+      "companyWebsiteUrl":"https://www.urbanbuild.com.ng",
+      "imageUrl": "images/urban_build.png",
+      "membershipLevel":"Silver"
+
+    },
+    {
+      "companyName":"EverGreen",
+      "companyAddress":"45 Eco Park Road, Abuja, Nigeria",
+      "companyPhoneNumber":"+234 802 345 6789",
+      "companyWebsiteUrl":"https://www.evergreen.ng",
+      "imageUrl":"images/evergreen.png",
+      "membershipLevel": "Gold"
+
+    },
+    {
+      "companyName":"Blue Solution",
+      "companyAddress":"78 Skyline Avenue, Lagos, Nigeria",
+      "companyPhoneNumber":"+234 803 456 7890",
+      "companyWebsiteUrl":"https://www.bluesolution.com.ng",
+      "imageUrl":"images/elevate.png",
+      "membershipLevel": "Not for profit"
+
+    },
+    {
+      "companyName":"Eclipse",
+      "companyAddress":"12 Oceanic Street, Port Harcourt, Nigeria",
+      "companyPhoneNumber":"+234 805 567 8901",
+      "companyWebsiteUrl":"https://www.eclipse.com.ng",
+      "imageUrl":"images/eclipse.png",
+      "membershipLevel": "Silver"
+
+    },
+    {
+      "companyName":"Tech Nova",
+      "companyAddress":"56 Summit Road, Ibadan, Nigeria",
+      "companyPhoneNumber":"+234 806 678 9012",
+      "companyWebsiteUrl":"https://www.technova.com.ng",
+      "imageUrl":"images/telo.png",
+      "membershipLevel":"Silver"
+
+    },
+    {
+      "companyName":"Anna  Co",
+      "companyAddress":"89 Sunshine Boulevard, Enugu, Nigeria",
+      "companyPhoneNumber":"+234 807 789 0123",
+      "companyWebsiteUrl":"https://www.annaCo.ng",
+      "imageUrl":"images/anna.png",
+      "membershipLevel": "Gold"
+
+    },
+    {
+      "companyName":"Skyline",
+      "companyAddress":"34 Horizon Lane, Kano, Nigeria",
+      "companyPhoneNumber":"+234 808 890 1234",
+      "companyWebsiteUrl":"https://www.skylineco.ng",
+      "imageUrl":"images/infinite.png",
+      "membershipLevel": "Gold"
+
+    }
+]
+}

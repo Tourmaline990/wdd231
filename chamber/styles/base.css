@@ -1,0 +1,231 @@
+:root{
+    
+    --color1: #1C1C1C;
+    --color2:#111827;;
+    --hover:#1E2A4A;
+    --text: #fff;
+    --font: 'Open sans';
+}
+  /* HEADER*/
+header{
+    display: grid;
+    grid-template-columns: 44px auto 44px;
+    padding: 15px 0 0 10px;
+    border-bottom: 0.65px solid #aaa;
+    column-gap: 4px;
+    align-items: center;
+    background-color: var(--color1);
+    color: var(--text);
+}
+header img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 2px;
+}
+header span{
+    font-size: 1.1rem;
+    font-family: var(--font); 
+    text-align: center; 
+    padding-bottom: 5px;
+}
+.hambtn{
+    background: 0;
+    border: 0;
+}
+.hambtn::after{
+    content: '\2630';
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--text);
+}
+.hambtn.open::after{
+    content: '\00d7';
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--text);
+}
+      /* NAV */
+#navs{
+    display: none;
+}
+#navs.open{
+    display: block;
+    cursor: pointer;   
+}
+#navs{
+   list-style-type: none;
+   margin: 0;
+    padding: 0;
+}
+#navs a{
+    display: block;
+    text-decoration: none;
+    font-family: var(--font);
+    color: var(--color1);
+    padding: 0.8rem 10px;
+    font-weight: 500;
+    border-bottom: 1px solid #bbb;
+    background-color: var(--color2);
+    color: var(--text);
+}
+#navs.open a:hover{
+    background-color: var(--hover);
+}
+     /* FOOTER*/
+footer{
+    background-color: var(--color1);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-left: 10px;
+    text-align: center;
+}
+.business-info h3{
+  color: var(--text);
+  font-family: var(--font);
+  font-weight: 400;
+  margin-bottom: 0;
+  font-size: medium;
+}
+.business-info p{
+    color: var(--text);
+    font-family: var(--font);
+    font-size: smaller;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+.social a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #bbb;
+    width: 44px;
+    height: 44px;
+    border-radius: 5px;
+}
+.social img{
+    display: block;
+    width: 22px;
+    height: 22px;
+}
+.social a:hover{
+    background-color: var(--hover);
+}
+.developer{
+    color: var(--text);
+    font-family: var(--font);
+    font-size: small;
+}
+         /* MAIN */
+.dir{
+    margin: 0;
+    padding: 8px 0 0 10px;
+    font-family: var(--font);
+    color: var(--color1);
+}
+.Menu{
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem;
+    gap: 15px;
+}
+.Menu button{
+    padding: 0.7rem;
+    margin-top: 8px;
+    background-color: var(--color2);
+    color: var(--text);
+    font-family: var(--font);
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 2px 3px 4px black;
+}
+.Menu button:hover{
+    background-color: var(--hover);
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+    grid-gap: 12px;
+    margin: 0.8rem;
+   padding: 15px ;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 10px;
+    padding: 10px;
+    section{
+        display: grid;
+        grid-template-columns:  1fr 1fr 1fr;
+        column-gap: 8px;
+        align-items: center;
+        box-shadow: none;
+        border-radius: 4px;
+        padding: 10px;
+       
+        
+    }
+    img{
+        display: none;
+    }
+    section h2{
+        font-size: small;
+        padding-left: 8px;
+    }
+    section p{
+          font-size: smaller;
+    }
+    .no{
+        display: none;
+    }
+    section a{
+        font-size: small;
+        padding-right:7px;
+        word-break: break-all;
+      
+    }
+    section:nth-child(odd){
+        background-color:#E6ECF6 ;
+        
+    }
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ddd;
+    font-family: var(--font);
+    padding: 10px 0 10px 0;
+    box-shadow: 2px 3px 2px 3px #aaa;
+    gap: 10px;
+    
+}
+#navs a.active{
+   background-color: #243255 ;
+   }
+section img{
+    display: block;
+    width: 75px;
+    height: 75px;
+}
+section h2{
+ margin: 0;
+ padding: 0;
+ color: var(--color1);
+ font-weight: 500;
+ text-shadow: 0 0 30px;
+}
+section p{
+    margin: 0;
+    padding: 0;
+    color: var(--color1);
+    margin-top: 3px;
+    font-size: smaller;
+    font-weight: 500;
+    font-family: var(--font);
+}

@@ -32,7 +32,6 @@ const displayProphets = (prophets) => {
     card.appendChild(dob);
     card.appendChild(birth_place);
     card.appendChild(portrait);
-    
     cards.append(card);
 
   });
