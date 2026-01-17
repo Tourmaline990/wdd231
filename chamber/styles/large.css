@@ -45,14 +45,14 @@
     background-color: var(--hover);
    }
    
-   .list{
-    section{
+
+  .list section{
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
-    .no{
+  .list .no{
         display: block;
-    }
-   }
+ }
+   
    footer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
