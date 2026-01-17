@@ -81,7 +81,7 @@ footer{
     padding-left: 10px;
     text-align: center;
 }
-.business-info h3{
+.business-info h2{
   color: var(--text);
   font-family: var(--font);
   font-weight: 400;
@@ -126,6 +126,7 @@ footer{
     padding: 8px 0 0 10px;
     font-family: var(--font);
     color: var(--color1);
+    font-size: 1.3rem;
 }
 .Menu{
     display: flex;
