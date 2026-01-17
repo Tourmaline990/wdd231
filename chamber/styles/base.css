@@ -224,7 +224,7 @@ section p{
     padding: 0;
     color: var(--color1);
     margin-top: 3px;
-    font-size: smaller;
+    font-size: 0.95rem;
     font-weight: 500;
     font-family: var(--font);
 }
