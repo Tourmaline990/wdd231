@@ -71,7 +71,12 @@ menulist.addEventListener('click',()=>{
 //nav
 const ham = document.querySelector('#navigation');
 const navs = document.querySelector('#navs');
+
+
 ham.addEventListener('click',()=>{
+    const aria = ham.getAttribute('aria-expanded') === 'true';
+    ham.setAttribute('aria-expanded',!aria)
     ham.classList.toggle('open');
     navs.classList.toggle('open');
+   
 })
