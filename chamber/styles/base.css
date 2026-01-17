@@ -158,8 +158,8 @@ footer{
     flex-direction: column;
     margin: 0 auto;
     gap: 10px;
-    padding: 10px;
-    section{
+    padding: 10px;}
+.list  section{
         display: grid;
         grid-template-columns:  1fr 1fr 1fr;
         column-gap: 8px;
@@ -169,31 +169,30 @@ footer{
         padding: 10px;
        
         
-    }
-    img{
+ }
+.list  img{
         display: none;
     }
-    section h2{
+.list  section h2{
         font-size: small;
         padding-left: 8px;
-    }
-    section p{
+ }
+.list section p{
           font-size: smaller;
     }
-    .no{
+.list  .no{
         display: none;
     }
-    section a{
+.list section a{
         font-size: small;
         padding-right:7px;
         word-break: break-all;
       
+ }
+.list section:nth-child(odd){
+   background-color:#E6ECF6 ;    
     }
-    section:nth-child(odd){
-        background-color:#E6ECF6 ;
-        
-    }
-}
+
 section{
     display: flex;
     flex-direction: column;
