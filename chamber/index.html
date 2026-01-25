@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netscale Directory | Chamber of Commerce</title>
+    <title>Netscale Homepage | Chamber of Commerce</title>
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
     <link rel="icon" href="images/favicon.ico">
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/index.js" defer></script>
     <meta name="author" content="Agbetoba Aliya">
     <meta name="description" content="NetScale project founded in 2026 is Ojo's premier chamber, learn more about our goals, objectives, and services ">
     <meta property='og:title' content="Netscale">
@@ -26,31 +26,48 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
-<body>
-   
+<body> 
     <header>
        <img src="images/net_logo.webp" alt="brand's logo">
-       <span>NetScale Chamber Of Commerce  </span>
+       <span>NetScale Chamber Of Commerce</span>
        <img src="images/circle-half.svg" alt="Half circle" loading="lazy">
        <button id="navigation" class="hambtn" aria-label="Menu Button" aria-expanded="false"></button>
     </header>
     <nav class="navigate">
         <ul id="navs">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#" class="active">Directory</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
             <li><a href="join.html">Join</a></li>
-            <li><a href="diiscover.html">Discover</a></li>
+            <li><a href="discover.html">Discover</a></li>
         </ul>
     </nav>
    <main>
-     <h1 class="dir">Directory</h1>
-         <div class="Menu">
-            
-            <button id="list" aria-label="list view">List</button>
-         </div>
-       <article id="cards" class="grid">
-
+    <h1 class="dir">Home</h1>
+       <div class="overlay">
+        <img src="images/market.webp" alt="Net scale hero image" loading="lazy">
+       <div class="overlayp"><p>Netscale | Empowering Local commerce</p></div> 
+       </div>
+     
+     <section class="home-main">
+      <article>
+        <h1>Events</h1>
+        <div id="events">
+      <div class="hero">
+     <img src="images/netscale_hero.webp" alt="Netscale Hero Image" loading="lazy">
+      <button aria-label="Call to action button">Join Netscale</button>
+     </div>
+        </div> 
+        </article> 
+        <article>
+        <h1>Current Weather</h1>
+        <div id="current-weather"></div>
+        </article>
+        <article>
+        <h1>Weather Forecast</h1>
+       <div id="weather-forecast"></div>
        </article>
+       <div id="company-spotlights"></div>
+    </section>
    </main>
 
     <footer>

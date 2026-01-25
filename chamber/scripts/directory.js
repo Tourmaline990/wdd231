@@ -12,10 +12,10 @@ async function getCompany() {
     const response = await fetch(url);
     const data  = await  response.json()
     // console.table(data)
-    DisplayProphets(data.companies)
+    DisplayCompany(data.companies);
 }
 getCompany();
-function DisplayProphets(companies) {
+function DisplayCompany(companies) {
      companies.forEach(company => {
         
         // Creating
@@ -57,15 +57,14 @@ function DisplayProphets(companies) {
 }
 //main button
 
-const  menugrid = document.querySelector('#grid');
+
 const  menulist = document.querySelector('#list');
-menugrid.addEventListener('click',()=>{
-    cards.classList.add('grid');
-    cards.classList.remove('list');
-})
+
 menulist.addEventListener('click',()=>{
-    cards.classList.add('list');
-    cards.classList.remove('grid');
+    cards.classList.toggle('list');
+    menulist.textContent = 
+    menulist.textContent === 'List'? 'Grid':'List';
+   // cards.classList.remove('grid');
 })
 
 //nav

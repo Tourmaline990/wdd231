@@ -1,0 +1,30 @@
+h1{
+    text-align: center;
+    font-family: tahoma;
+    margin: 0;
+    padding: 0;
+    color: forestgreen;
+    font-size: 1.2rem;
+}
+figure{
+    border: 1px solid forestgreen;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: plum;
+    max-width: 300px;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    
+}
+figure img{
+   margin: 0 auto;
+   display: block; 
+}
+figcaption,p,footer{
+    text-align: center;
+    font-size: 1rem;
+    font-family: tahoma;
+    margin-bottom: .3rem;
+    color: forestgreen;
+
+}
