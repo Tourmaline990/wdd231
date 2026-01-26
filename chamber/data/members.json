@@ -24,7 +24,7 @@
       "companyPhoneNumber":"+234 803 456 7890",
       "companyWebsiteUrl":"https://tourmaline990.github.io/wdd231/chamber/directory.html",
       "imageUrl":"images/elevate.png",
-      "membershipLevel": "Not For Profit"
+       "membershipLevel": "Not For Profit"
 
     },
     {
@@ -62,6 +62,35 @@
       "imageUrl":"images/infinite.png",
       "membershipLevel": "Gold"
 
+    },
+    {
+      "companyName":"Lasana",
+      "companyAddress":"64 sunset Lane, lagos, Nigeria",
+      "companyPhoneNumber":"+234 808 890 1234",
+      "companyWebsiteUrl":"https://tourmaline990.github.io/wdd231/chamber/directory.html",
+      "imageUrl":"images/bags.png",
+      "membershipLevel": "Gold"
+
+    },
+    {
+      "companyName":"Homemade",
+      "companyAddress":"32 Freedom Way, lagos, Nigeria",
+      "companyPhoneNumber":"+234 808 890 1234",
+      "companyWebsiteUrl":"https://tourmaline990.github.io/wdd231/chamber/directory.html",
+      "imageUrl":"images/cive.webp",
+      "membershipLevel":"Not For Profit"
+
+    },
+    {
+      "companyName":"WhiteWater Rafting",
+      "companyAddress":"27 Admiralty Way, lagos, Nigeria",
+      "companyPhoneNumber":"+234 808 890 1234",
+      "companyWebsiteUrl":"https://tourmaline990.github.io/wdd231/chamber/directory.html",
+      "imageUrl":"images/rafting.png",
+      "membershipLevel":"Silver"
+
     }
+
+   
 ]
 }
