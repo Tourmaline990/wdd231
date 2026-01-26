@@ -295,7 +295,7 @@ section p{
     flex-wrap: wrap;
     overflow: hidden;
 }
-.home-main article h1{
+.home-main article h2{
     margin: 0;
     padding: 10px;
     border-bottom: 2px solid #ccc;
