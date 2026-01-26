@@ -253,7 +253,7 @@ section p{
 .overlayp p{
     font-size: 1.3rem;
     font-family: var(--font);
-    color: var(--color1);
+    color: black;
     font-weight: 600;
 }
 .hero button{
