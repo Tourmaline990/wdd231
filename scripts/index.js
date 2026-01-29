@@ -100,7 +100,8 @@ const wdd = document.querySelector('#wdd');
 const cse = document.querySelector('#cse');
 
 const space = document.querySelector('#space')
-
+const  modal = document.querySelector("#course-details");
+const modalItem = document.querySelector("#modal-item")
 
 function read_course(courses){
     space.textContent = '';
@@ -117,11 +118,38 @@ function read_course(courses){
         if(course.completed === true){ 
             btn.classList.add('true')
         }
+        btn.addEventListener("click",()=>{
+            modalItem.innerHTML = '';
+            const divi = document.createElement("div");
+            const closing = document.createElement("button");
+            const h2 = document.createElement("h2");
+            const pCredits = document.createElement("p");
+            const pCertificate = document.createElement("p");
+            const pdescription = document.createElement("p");
+            const ptech = document.createElement("p");
+
+            h2.innerHTML = `${course.subject}${course.number}`;
+            closing.innerHTML = 'X';
+            pCredits.innerHTML = `${course.credits}credits`;
+            pCertificate.innerHTML = `Certificate: ${course.certificate}`;
+            pdescription.innerHTML = `${course.description}`;
+            ptech.innerHTML = `Technology: ${course.technology}`;
+            divi.appendChild(h2);
+            divi.appendChild(closing);
+
+            modal.showModal();
+            modalItem.append(divi);
+            modalItem.append(pCredits);
+            modalItem.append(pCertificate);
+            modalItem.append(pdescription);
+            modalItem.append(ptech);
+            closing.addEventListener("click",()=>{
+                modal.close();
+            })
+        })
         space.append(btn)
       });
 }
-
-
 all.addEventListener('click',()=>{
   
     read_course(courses);
@@ -140,3 +168,4 @@ cse.addEventListener('click',()=>{
     space.classList.toggle('show');
     cse.classList.toggle('show');
 })
+

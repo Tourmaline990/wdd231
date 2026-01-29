@@ -318,7 +318,7 @@ section p{
     color: var(--text);
     padding: 6px;
 }
-.home-main div{
+.home-main #company-spotlights{
     display: grid;
     grid-template-columns: 1fr;
    overflow: hidden;
@@ -329,7 +329,7 @@ section p{
  display: grid;
  grid-template-columns: 1fr 2fr;
  padding: 5px 7px;
- border: 1px solid var(--color2);
+ border: 1px solid #aaa;
  border-radius: 5px;
  column-gap: 10px;
 }
