@@ -1,0 +1,168 @@
+
+body{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 20px;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    border: 3px solid chocolate;
+    border-radius: 100px;
+    background-color: lavenderblush;
+    transition: transform 5s ease-in ;
+}
+.box:hover{
+    
+    transform: translateX(50%);
+}
+.box1{
+    width: 200px;
+    height: 200px;
+    border: 3px solid navy;
+    border-radius: 100px;
+    background-color: lavenderblush;
+    transition: transform 7s ease-out;
+    
+}
+.box1:hover{
+    transform: translateY(70%);
+}
+
+.box2{
+    width: 200px;
+    height: 200px;
+    border: 3px solid forestgreen;
+    border-radius: 100px;
+    background-color: lavenderblush;
+    animation: bounce 2s ease-out 1s infinite alternate;
+
+}
+.box3{
+    width: 200px;
+    height: 200px;
+    border: 3px solid tomato;
+    border-radius: 100px;
+    background-color: lavenderblush;
+    animation: slant 1s ease-in-out 1s  infinite alternate;
+  
+}
+.box4{
+    width: 200px;
+    height: 200px;
+    border: 3px solid purple;
+    border-radius: 100px;
+    background-color: lavenderblush;
+    animation: rounded 1s ease 1s infinite alternate ;
+    
+}
+.box5{
+    width: 80px;
+    height: 80px;
+    border: 5px solid transparent;
+    border-radius: 50%;
+    box-shadow: 0 0 1rem rgb(0 0 255/40%);
+    animation: spin 1s linear 1s infinite ;
+    border-color: #999 transparent #999 transparent;
+}
+.box5::after{
+    content: "⚙️";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 1.3rem;
+    transform: translate(-50% -50%);
+    animation: pulse 1s ease-in-out 1s infinite ;
+}
+.box6{
+    width: 80px;
+    height: 80px;
+    border: 5px solid transparent;
+    border-radius: 50%;
+    box-shadow: 0 0 1rem rgb(0 0 255/40%);
+    animation: spin 1s linear 1s infinite ;
+    border-color: #999 transparent #999 transparent;
+    transition: spin 1s ease-in-out infinite;
+}
+.box6::after{
+    content: "⚙️";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 1.3rem;
+    transform: translate(-50% -50%);
+    transition: pulse 1s linear infinite;
+    font-size: 2rem;
+}
+.box6:hover{
+    transform: rotate(360deg);
+    
+}
+
+
+
+
+
+@keyframes bounce{
+    0%{
+        transform: translateX(50%);
+        
+    }
+    25%{
+        transform: translateX(-50%);
+        background-color: green;
+    }
+    50%{
+        transform: translateY(50%);
+        background-color: orange;
+    }
+    75%{
+        transform: translateY(-50%);
+    }
+    100%{
+        transform: scale(1.2);
+        background-color: plum;
+    }
+}
+@keyframes slant{
+    0%{
+        transform: skewX(0deg);
+        background-color: chocolate;
+      
+    }
+    50%{
+        transform: skewX(30deg);
+        background-color: red;
+    }
+    100%{
+        transform: skewY(50deg);
+    }
+}
+@keyframes rounded{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(90deg); 
+    }
+    50%{
+         transform: rotate(180deg);
+    }
+    100%{
+         transform: rotate(360deg);
+    }
+}
+@keyframes spin{
+   100%{
+    transform: rotate(360deg);
+   }
+}
+@keyframes pulse{
+    0%,100%{
+        transform: translate(-50%,-50%) scale(1);
+    }
+    50%{
+        transform: translate(-50%,-50%) scale(1.5);
+    }
+}
