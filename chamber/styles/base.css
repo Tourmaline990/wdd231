@@ -460,6 +460,7 @@ input[type="submit"]{
    background-color: var(--color2);
    color: var(--text);
    border-radius: 18px 0 15px 0;
+   animation: fadeIn 2s ease-out 2s;
    
 }
 .membership-card h3{
@@ -529,4 +530,12 @@ dialog ul{
 .openButton:hover{
     background-color: tomato;
     transform: scale(1.2);
+}
+@keyframes fadeIn{
+   0%{
+       opacity: 0;
+   }
+   100%{
+    opacity: 1;
+   }
 }

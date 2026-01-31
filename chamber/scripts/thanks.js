@@ -18,9 +18,9 @@ const today = new Date();
 year.innerHTML = `${today.getFullYear()}`;
 
 const newString = window.location.search;
-console.log(newString);
+//console.log(newString);
 const params = new URLSearchParams(newString);
-console.log(params);
+//console.log(params);
 
 container.innerHTML = `
 <p>Membership for ${params.get('first')} ${params.get('last')} </p>
