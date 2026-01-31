@@ -121,5 +121,30 @@
    .home-main #company-spotlights{
     grid-template-columns: 1fr 1fr 1fr;
    }
+
+   .two-columns{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    }
+   form{
+    grid-column: 1;
+    }
+   input[type="submit"]{
+    margin: 10px;
+    }
+    .membership-card{
+      animation: display 3s ease-out  1s;
+    }
+    @keyframes display{
+      0%{
+        transform: translateY(80%);
+        opacity: 0;
+       }
+      100%{
+        transform: translateY(-7%);
+        transform: skewX(20deg);
+       }
+    }
    
 }
+/* Join Page */
