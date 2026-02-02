@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes Design</title>
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+<body>
+    <main>
+        <article>
+        <h1>Youtube Video</h1>
+        <section>
+             <h2>Comments</h2>
+        <!-- Attributes-->
+         <div class="variable">
+         <p> _name; string</p>
+          <p> _commentText; string</p>
+         </div>
+         <!-- Methods-->
+         <div>
+           <p>Display(): void </p> 
+         </div>
+        </section>
+        <section>
+            <h2>Video</h2>
+            <div class="variable">
+                <p>_title; string</p>
+                 <p>_author; string </p>
+                  <p> _videoLengthInSec; int</p>
+                   <p>_comments; List(Comment)</p>
+            </div>
+            <div>
+                <p>CommentCount(): int </p>
+                <p>AddComment(Comment newComment): void</p>
+                <p>Display(): void </p>
+                <p>VideoDisplay(): void</p>
+             
+            </div>
+        </section>
+        <section>
+            <h2>VideoCatalog</h2>
+            <div class="variable">
+                <p> _videos: List(Video) </p>    
+            </div>
+            <div>
+              <p>AddVideo(Video newVideo): void</p>
+              <p>CatalogDisplay(): Void </p>  
+              
+            </div>
+        </section>
+
+        </article>
+         <article>
+           <h1>Online Ordering</h1>
+           <section>
+            <h2>Addresss</h2>
+            <div class="variable">
+               <p> _street; string</p> 
+                <p> _city;  string</p>  
+                 <p> _state;  string</p>  
+              <p> _country;  string</p>
+              <p> _isUsa;  bool</p> 
+            </div>
+            <div>
+                <p>Address(string city,string state,string country)</p>
+                <p>public Address(string street,string city,string state,string country)</p>
+            </div>
+            <div>
+                <p> SetAsIsUsa() void</p>
+                <p> SetAsIsNotUsa() void</p>
+                <p> GetUsa() bool</p>
+                <p> DisplayAddress()  string</p>
+            </div>
+           </section>
+           <section>
+            <h2>Customer</h2>
+            <div class="variable">
+                <p> _name; string</p>
+                <p> _address;  Address</p>
+            </div>
+            <div>
+                <p>Customer(string name, Address address)</p>
+
+            </div>
+            <div>
+                <p> ValidateUsa():  bool</p>
+                <p>SetCustomeName(string name): void </p>
+                <p>GetCustomerName():  string </p>
+                <p> GetAddress():  string</p>
+                <p>SetAddress(Address newAddress):  void </p>
+            </div>
+           </section>
+           <section>
+            <h2>Product</h2>
+            <div class="variable">
+              <p> _name;  string</p>  
+               <p> _productId; string</p> 
+               <p> _price;  decimal</p>
+              <p> _quantity; int</p> 
+            </div>
+            <div>
+                <p>Product(string name, string Productid, decimal price,int quantity)</p>
+            </div>
+            <div>
+               <p> GetProductName(): string</p> 
+               <p> SetProductName(string name): void</p>
+               <p> GetProductId():  string</p>
+               <p> SetProductId(string id):  void</p>
+               <p> GetProductPrice():  decimal</p>
+               <p> SetProductPrice(decimal price): public void</p>
+               <p> GetQuantity(): public int</p>
+               <p> SetQuantity(int q): public void</p>
+               <p> TotalCost(): public decimal</p>
+            </div>
+           </section>
+           <section>
+            <h2>Order</h2>
+            <div class="variable">
+                <p> _customer; Customer</p>
+                <p> _products: List<Product></p>
+            </div>
+            <div>
+                <p>Order(Customer customer)</p>
+            </div>
+            <div>
+               <p>Addproduct(Product product):  void</p> 
+               <p> OrderCost():  decimal</p>
+               <p> GetPackingLabel(): string</p>
+               <p> GetShippingLabel():string</p>
+            </div>
+           </section>
+         </article>
+    </main>
+</body>
+</html>
