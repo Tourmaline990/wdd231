@@ -9,11 +9,11 @@
   /* HEADER*/
 header{
     display: grid;
-    grid-template-columns: 44px auto 24px 44px;
-    padding: 15px 0 10px 10px;
+    grid-template-columns: 44px auto 25px 44px;
+    padding: 7px 10px;
     border-bottom: 0.65px solid #aaa;
     column-gap: 4px;
-    align-items: center;
+    align-items: end;
     background-color: var(--color1);
     color: var(--text);
 }
@@ -23,15 +23,20 @@ header img{
     height: auto;
    
 }
+.circle-half{
+    margin-bottom: 5px;
+}
 header span{
     font-size: 1.1rem;
     font-family: var(--font); 
     text-align: center; 
-    padding-bottom: 5px;
+    
 }
 .hambtn{
     background: 0;
     border: 0;
+    padding: 0;
+    cursor: pointer;
 }
 .hambtn::after{
     content: '\2630';
