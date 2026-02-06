@@ -10,7 +10,7 @@
 header{
     display: grid;
     grid-template-columns: 44px auto 24px 44px;
-    padding: 15px 0 10px 5px;
+    padding: 15px 0 10px 10px;
     border-bottom: 0.65px solid #aaa;
     column-gap: 4px;
     align-items: center;
@@ -270,6 +270,7 @@ section p{
      transform: translate(-50%,-50%);
      cursor: pointer;
 }
+div.tag button:hover,
 .hero button:hover,
 input[type="submit"]:hover{
     background-color: var(--hover);
@@ -538,4 +539,92 @@ dialog ul{
    100%{
     opacity: 1;
    }
+}
+
+/*  Discover  */
+div.tag{
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "image"
+    "desc"
+    "address"
+    "btn"
+    ;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    background-color: #eee;
+    padding: 8px;
+    gap: 12px;
+  
+   
+}
+div.tag h2{
+    grid-area: name;
+    font-family: var(--font);
+}
+div.tag address{
+    grid-area: address;
+}
+div.tag figure {
+    grid-area: image;
+    margin: 0;
+}
+div.tag p{
+    grid-area: desc;
+    font-size: 1rem;
+    word-spacing: 3px;
+     font-family: var(--font);
+     font-weight: 500;
+}
+div.tag button{
+    grid-area: btn;
+    padding: 8px;
+    border-radius: 12px;
+    background-color: var(--color2);
+    color: var(--text);
+    border: 0;
+    height: 44px;
+    font-family: var(--font);
+}
+div.tag figure img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    border-radius: 3px;
+}
+#interest-card{
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    margin: 10px 0;
+    gap: 16px;
+}
+#visitStatus.close{
+    padding: 0 10px;
+    font-family: var(--font);
+    color: var(--color2);
+    display: block;
+}
+#visitStatus{
+    display: none;
+}
+.localStorage{
+   max-width:100%;
+    border: 1px solid #aaa;
+    margin: 0 10px;
+    cursor: pointer;
+    background-color: #ddd;
+    padding: 5px;
+    font-family: var(--font);
+}
+.localStorage::after{
+    content: "▼";
+    display: inline-block;
+    transition: transform 0.3s ease-out;
+    margin-left: 8px;
+   
+}
+.localStorage.close::after{
+   transform: rotate(180deg);
 }

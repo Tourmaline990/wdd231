@@ -1,0 +1,8 @@
+
+
+@media screen and (min-width: 64rem){
+   #interest-card{
+    display: grid;
+    grid-template-columns: auto auto;
+   }
+}

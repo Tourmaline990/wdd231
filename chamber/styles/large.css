@@ -9,9 +9,10 @@
     --font: 'Open sans';
     }
     header,main,nav,footer{
-        max-width: 900px;
+        max-width: 1000px;
         margin: 0 auto;
     }
+    
     header{
         grid-template-columns: 44px auto ;
         align-items: end;
@@ -145,6 +146,24 @@
         transform: skewX(20deg);
        }
     }
-   
+    /* Discover Page */
+    #interest-card{
+      display: flex;
+      flex-direction: column;
+    }
+    #interest-card div.tag{
+     display: grid;
+    
+     grid-template-areas:
+     "name name"
+     "image desc"
+     "image address"
+     "btn btn";
+     grid-auto-rows: min-content;
+   }
+   div.tag figure img:hover{
+    border-radius: 15px 150px;
+   }
+  
 }
-/* Join Page */
+
