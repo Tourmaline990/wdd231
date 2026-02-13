@@ -1,0 +1,63 @@
+@media screen and (min-width: 38rem){ 
+    :root{
+    --color-bs: #BFA6A2;
+    --btn-bg: #ff776d;
+    --btn-text: rgb(0 0 0 /80%);
+    --btn-hover: #f68f84;
+    --nav-bg: #731c1c;
+    --nav-hover: #AC4F48;
+    --modal-bg: #933f09;
+    --text: #fff;
+    --font: "Quicksand"
+    }
+    header{
+       display: flex;
+        align-items: center;
+        justify-content: start;
+        max-height: 70px;
+        width: auto;
+        padding-top: 18px;
+        border-bottom: 1px solid #aaa;
+    }
+    header span,
+    .svg,
+    .ham-btn{
+        display: none;
+    }  
+    .brandlogo{
+        display: block;
+        width: auto;
+        max-width: 100%;
+        height: auto;
+    }
+    .navigation {
+        display: flex;  
+        background-color: var(--nav-bg);
+        
+    }
+    
+    .navigation li{
+       flex: 1;
+      border-left: 1px solid #aaa;
+      text-align: center;
+      
+    }
+    .navigation a{
+       border: 0;
+       display: block;
+       padding: 16px;
+    }
+    .hero img.hide{
+        display: block;
+    }
+    .hero{
+        display: flex;
+      margin: .95rem;
+    }
+    .hero img{
+        width: 50%;
+    }
+    
+    
+   
+}

@@ -1,0 +1,127 @@
+:root{
+    --color-bs: #BFA6A2;
+    --btn-bg: #ff776d;
+    --btn-text: rgb(0 0 0 /80%);
+    --btn-hover: #f68f84;
+    --nav-bg: #731c1c;
+    --nav-hover: #AC4F48;
+    --modal-bg: #933f09;
+    --text: #fff;
+    --font: "Quicksand"
+   
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    max-height: 60px;
+    width: auto;
+    padding: 10px 8px 0 0;
+    border-bottom: 1px solid #aaa;
+}
+.brandlogo{
+    display: block;
+    height: auto;
+    max-width: 100%;   
+}
+.ham-btn{
+    align-self: center;
+    background: 0;
+    border: 0;
+    font-size: 1.7rem;
+    font-family: verdana;
+    color: var(--nav-bg); 
+    cursor: pointer;
+    justify-self: end;
+    margin-left: auto;
+}
+.ham-btn:focus{
+  border: 1px solid #006640;
+}
+.ham-btn::after{
+ content: "\2630";
+}
+.ham-btn.show::after{
+    content:"\00d7";
+}
+.navigation{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: none;
+}
+.navigation.show{
+    display: flex;
+    flex-direction: column;
+   
+}
+.navigation a{
+    display: block;
+    text-decoration: none;
+    font-family: var(--font);
+     border-bottom: 0.3px solid #bbb;
+     padding: 8px;
+     background-color: var(--nav-bg);
+     color: var(--text);
+     font-size: 1.2rem;
+     cursor: pointer;
+}
+.navigation a:hover,
+.navigation a.active{
+    background-color: var(--nav-hover);
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--nav-bg);
+    color: var(--text);
+    text-align: center;
+    font-family: var(--font);
+    padding: 10px 0;
+}
+.c-info span{
+   font-size: 1.2rem;
+}
+.c-info p,
+.about p{
+    font-size: smaller;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+.social a{
+    display: flex;
+    border: .95px solid var(--text);
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+.social a:hover,
+.social a:focus{
+    background-color: var(--nav-hover);
+}
+.social img{
+    display: block;
+    width: 100%;
+}
+.intro{
+    margin: 0;
+    padding: 0 8px;
+    font-family: var(--font);
+    font-size: 1.4rem;
+}
+.hero img{
+     display: block;
+     max-width: 100%;
+     height: auto;
+}
+.hero{
+    margin: 0.25rem;
+}
+.hero img.hide{
+    display: none;
+}
