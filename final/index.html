@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
-    <script src="scripts/index.js" defer></script>
+    <script src="scripts/index.js" type="module"></script>
 </head>
 <body>
     <header>
@@ -43,6 +43,61 @@
     <main>
       <h1 class="intro">Home</h1>
       <div id="hero" class="hero"></div>
+      <p class="theme">Dynamic Earth uses live NASA satelite data to track natural events, Earth imagery, and environmental changes -- Updated Daily.</p>
+      <h2 class="centered">Today On Earth</h2>
+      <article class="grouped">
+      <article id="updates"></article>
+      <article class="spaceFacts">
+        <h3> Space facts</h3>
+        <ul>
+          <li>Space is completely silent</li>
+          <li>Stars don’t actually “twinkle”</li>
+          <li>Space officially begins at 100 km above Earth</li>
+          <li>The Sun contains 99.86% of the Solar System’s mass</li>
+          <li>Black holes aren’t cosmic vacuum cleaners</li>
+        </ul>
+      </article>
+       <article id="curious">
+        <h3>Did you Know?</h3>
+        <button>Generate Facts</button>
+        <dialog id="modal">
+          <div id="content"></div>
+          <button id="closebtn">✕</button>
+        </dialog>
+       </article>
+       </article>  
+       <h3 class="centered">Planets</h3>
+       <article id="planetCard">
+        <section>
+          <h4>Earth</h4>
+          <div>
+            <img src="images/planearth.webp" alt="Earth's image" loading="lazy">
+          </div>
+          <p>Earth is the third planet from the Sun and the only astronomical object known to harbor life. 
+            </p>
+        </section>
+        <section>
+          <h4>Mars</h4>
+          <div>
+            <img src="images/mars.webp" alt="Mars image" loading="lazy">
+          </div>
+          <p>Mars is the fourth planet from the Sun. It is also known as the "Red Planet", for its orange-red appearance </p>
+        </section>
+        <section>
+          <h4>Jupiter</h4>
+          <div><img src="images/jupiter.webp" alt="Jupiter's image" loading="lazy"></div>
+          <p>Jupiter is the fifth planet from the Sun, and the largest in the Solar System. </p>
+        </section>
+        <section>
+          <h4>Saturn</h4>
+          <div>
+            <img src="images/saturn.webp" alt="saturn image" loading="lazy">
+          </div>
+          <p>Saturn is the sixth planet from the Sun and the second largest in the Solar System, after Jupiter. 
+              </p>
+        </section>
+       </article>
+   
     </main>  
     <footer>
         <div class="c-info">
