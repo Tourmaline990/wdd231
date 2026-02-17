@@ -166,23 +166,7 @@ function ForVolcanoe(data,parent) {
    parent.append(ul);
 }
 
-async function Getdat(url){
-   try {
-    const response = await fetch(url);
-     if(response.ok){
-        const data  =  await response.json();
-        console.log(data);
-      // DisplayFn(data,parent) ;
-     }
-     else{
-        throw new error(await response.text())
-     }
-   } 
-   catch (error) {
-     console.log(error);
-   } 
 
-}
 
 function nearEarth(data,parent){
    parent.innerHTML = ' ';
@@ -215,7 +199,7 @@ function nearEarth(data,parent){
 //"https://eonet.gsfc.nasa.gov/api/v2.1/categories/12"
 //https://eonet.gsfc.nasa.gov/api/v2.1/categories/15"
 // Getdat(`https://eonet.gsfc.nasa.gov/api/v2.1/categories`);
-Getdat(`https://api.nasa.gov/neo/rest/v1/feed?start_date=${enddate}&end_date=${date}&api_key=${api}`);
+//Getdat(`https://api.nasa.gov/neo/rest/v1/feed?start_date=${enddate}&end_date=${date}&api_key=${api}`);
 
 import { curious } from "../data/curiousity.mjs";
 const curiousBtn = document.querySelector("#curious button");

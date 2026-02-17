@@ -13,3 +13,14 @@ const update = document.querySelector("#modify");
 let today = new Date();
 year.innerHTML = `${today.getFullYear()}`;
 update.innerHTML = document.lastModified;
+
+const data = window.location.search;
+// console.log(data);
+const string = new URLSearchParams(data);
+// console.log(string);
+const Username = document.querySelector("#name");
+Username.innerHTML = `${string.get("fname")}`
+
+document.querySelector(".btn").addEventListener("click",()=>{
+    window.location.href = 'index.html';
+})

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Earth Homepage</title>
+    <title>Dynamic Earth Updates</title>
     <meta name="author" content="Agbetoba Aliya">
     <meta name="description" content="Dynamic Earth is an interactive site that provides visitors with live data feed on earth , daily events update, and an overall outlook on changes undergone by earth.">
     <meta name="keyword" content="earth, earth-dynamics, space, earth-today">
@@ -36,14 +36,41 @@
     <nav>
         <ul id="navigation" class="navigation">
             <li><a href="index.html">Home</a></li>
-            <li><a href="#" class="active">Mission</a></li>
-            <li><a href="update.html">Updates</a></li>
+            <li><a href="about.html">Mission</a></li>
+            <li><a href="#" class="active">Updates</a></li>
         </ul>
     </nav>
     <main>
-      <h1 class="intro">Mission</h1>
-       <form method="get">
-        
+      <h1 class="intro">Updates</h1>
+       <form method="get" action="thankyou.html">
+        <fieldset class="first">
+        <legend>Personal Information </legend>
+         <label>First Name*<input type="text" title="First Name" required name="fname" autocomplete="given-name"></label>
+         <label>Last Name* <input type="text" title="Last Name" required name="lname" autocomplete="family-name" ></label>
+         <label>Email* <input type="email" title="email" required name="email" autocomplete="email" placeholder="Someone@gmail.com"></label>
+         <label>Country* <input type="text" title="Location" required name="country" placeholder="Nigeria"></label>
+         </fieldset>
+         <fieldset class="second">
+          <legend>What Intrigued You</legend>
+          <label><input type="checkbox" name="intrigue" value="Astronomy" title="Astronomy" required>Astronomy Image</label>
+          <label><input type="checkbox" name="intrigue" value="Satelite" title="Satelite">Space Phenomena</label>
+          <label><input type="checkbox" name="intrigue" value="Earth" title="Land Changes">Earth Observation</label>
+          <label><input type="checkbox" name="intrigue" value="volcanoe" title="Volcanoes">Volcanoes and Wildfire</label>
+          <label><input type="checkbox" name="intrigue" value="Natural Events" title="Storms">Natural Events</label>
+         </fieldset>
+         <fieldset class="third">
+          <legend>Updates Preference</legend>
+          <label><input type="radio" required name="newsletter" value="dailydigest" title="Daily Digest">Major Events Only</label>
+          <label><input type="radio" required name="newsletter" value="weekly" title="Weekly Summary">Weekly Summary</label>
+          <label><input type="radio" required name="newsletter" value="special alerts" title="Special Alerts">Monthly Highlights</label>
+         </fieldset>
+         <label class="fourth"><input type="checkbox" required name="consent" value="yes">I agree to recieve emails and understand my data will be handled safely</label>
+         <fieldset> 
+          <legend>Share Your Thoughts</legend>
+          <textarea name="thoughts" placeholder="Any Feauture You'd love to see?"></textarea>
+         </fieldset>
+         <input type="date" hidden name="date">
+         <input type="submit" value="Subscribe">
        </form>
          
     </main>
@@ -55,9 +82,9 @@
          <p>+234 1 465 7653</p>
          </div>
        <div class="social">
-         <a href="" target="_blank"><img src="images/github.svg" alt="Github icon" width="16" height="16"></a>
-         <a href="" target="_blank"><img src="images/twitter-x.svg" alt="twitter icon" width="16" height="16"></a>
-         <a href="" target="_blank"><img src="images/linkedin.svg" alt="linkedin icon" width="16" height="16"></a>
+         <a href="https://github.com/tourmaline990" target="_blank"><img src="images/github.svg" alt="Github icon" width="16" height="16"></a>
+         <a href="https://x.com/" target="_blank"><img src="images/twitter-x.svg" alt="twitter icon" width="16" height="16"></a>
+         <a href="https://www.linkedin.com/in/haliya-agbetoba-8860b9376/" target="_blank"><img src="images/linkedin.svg" alt="linkedin icon" width="16" height="16"></a>
       </div>
       <div class="about">
          <p>WDD231 Final Project</p>

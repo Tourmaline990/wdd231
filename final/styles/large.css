@@ -122,4 +122,24 @@
    .overlay{
     width: 100%;
    }
+   fieldset{
+    width: 70%;
+     margin: 0 auto;
+   }
+   form{
+     margin: 1rem auto;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 80%;
+     box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+   }
+   .fourth{
+    align-self: center;
+   }
+   .refine{
+    width: 600px;
+    margin: 0 auto;
+   }
+   
 }

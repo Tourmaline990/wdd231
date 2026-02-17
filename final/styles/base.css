@@ -147,7 +147,8 @@ footer{
 .spaceFacts h3,
 #curious h3,
 #curious button,
-#planetCard section h4{
+#planetCard section h4,
+.btn{
     text-align: center;
     font-family: var(--font);
 }
@@ -197,7 +198,7 @@ footer{
     padding-left: 8px;
 }
 #updates section div ul li::before{
-    content: "√";
+    content: "✓";
     font-weight: 500;
     font-size: 1.3rem;
     margin-right: 8px;
@@ -229,7 +230,9 @@ footer{
     list-style-type: circle;
     
 }
-#curious button{
+#curious button,
+input[type="submit"],
+.btn{
     height: 44px;
     width: 90%;
     display: block;
@@ -241,8 +244,11 @@ footer{
     padding: 16px;
     text-align: center;
     cursor: pointer;
+    animation: bounce 5s ease-in-out infinite;
 }
-#curious button:hover{
+#curious button:hover,
+input[type="submit"]:hover,
+.btn:hover{
     background-color: #798897;
     color: var(--text);
 }
@@ -342,5 +348,115 @@ button#closebtn{
     }
     100%{
         transform: rotate(360deg);
+    }
+}
+@keyframes bounce {
+    0%{
+        
+        transform: scale(0.9);
+    }
+    50%{
+       
+    }
+    100%{
+       
+        transform: scale(1);
+    }
+}
+form{
+    padding: 10px 12px;
+    font-family: var(--font);
+    color: black;
+}
+form fieldset{
+    background: rgba(255,255,255,0.08) ;
+    backdrop-filter: blur(8px);
+     margin: 16px 5px;
+     padding: 10px;
+     border-radius: 8px;
+    
+}
+fieldset legend{
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+.first input{
+    display: block;
+    padding: 11px;
+    margin-bottom: 10px;
+    width: 80%;
+    border: 1px solid #aaa;
+    border-right: 2px solid tomato;
+    cursor: pointer;
+    
+}
+.first label,
+.fourth{
+    font-size: 1rem; 
+    font-weight: 500;
+}
+.first input:valid{
+    border-right: 2px solid #006640;
+}
+.first input:focus{
+    border: none;
+     box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+.second label,
+.third label{
+    display: block;
+    padding: 13px 0px;
+    cursor: pointer;
+    font-weight: 500;
+}
+.second input,
+input[type="radio"],
+.fourth input{
+    margin-right: 8px;
+}
+textarea{
+    width: 80%;
+    height: 100px;
+}
+input[type="submit"]{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    padding: 12px;;
+}
+label:hover{
+    color: #006640;
+}
+.fourth{
+    margin: 10px;
+}
+#icon{
+    width: 80px;
+    height:80px ;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+    background: rgba(115, 28, 28, 0.48 );
+    border-radius: 50%;
+    margin: 10px auto ;
+    text-align: center;
+    font-size: 3.3rem;
+    color: var(--text);
+  animation: scale 0.30s ease-in-out ;
+}
+.t{
+    text-align: center;
+    font-family: var(--font);
+}
+@keyframes scale {
+    0%{
+        transform: scale(0);
+       
+    }
+    
+    50%{
+        transform:scale(0.92) ;
+    }
+    100%{
+       transform:scale(1.2)
+    
     }
 }
