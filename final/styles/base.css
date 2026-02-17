@@ -304,7 +304,7 @@ button#closebtn{
 }
 .overlay p{
  text-align: center;
- font-family: 800;
+ font-weight: 800;
 }
 #planetCard section div img{
     display: block;
@@ -328,7 +328,7 @@ button#closebtn{
     display: flex;
     flex-direction: column;
 }
-.parent section h3{
+.parent section h2{
     text-align: center;
     font-family: var(--font);
     font-size: 1.3rem;
