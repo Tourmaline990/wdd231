@@ -1,6 +1,9 @@
 const Hambtn = document.querySelector("#ham-btn");
 const navigation = document.querySelector("#navigation");
+
 Hambtn.addEventListener("click",()=>{
+  const Istrue =  Hambtn.getAttribute("aria-expanded") === "true";
+   Hambtn.setAttribute("aria-expanded", !Istrue)
    Hambtn.classList.toggle("show")
     navigation.classList.toggle("show");
 })

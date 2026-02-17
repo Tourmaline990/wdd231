@@ -93,6 +93,33 @@
     background-color: #798897;
    }
    #planetCard section:hover{
-   rotate: 0.03turn;
+   rotate: 0.02turn;
+   }
+   footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 16px  10px;
+   }
+   .social{
+    align-items: center;
+   }
+   .globe{
+    width: 600px;
+    height: 600px;
+   }
+   .parent{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 900px;
+    margin: 0 auto;
+    width: 80%;
+    column-gap: 32px;
+   }
+   .parent section{
+    font-weight: 500;
+    line-height: 1.8;
+   }
+   .overlay{
+    width: 100%;
    }
 }
