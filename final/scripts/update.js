@@ -13,3 +13,10 @@ const update = document.querySelector("#modify");
 let today = new Date();
 year.innerHTML = `${today.getFullYear()}`;
 update.innerHTML = document.lastModified;
+
+const textArea = document.querySelector("textarea");
+textArea.addEventListener("input",()=>{
+  window.localStorage.setItem("userdraft",`${textArea.value}`);
+})
+textArea.value = window.localStorage.getItem("userdraft") || "";
+
