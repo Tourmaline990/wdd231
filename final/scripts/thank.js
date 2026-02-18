@@ -20,6 +20,7 @@ const string = new URLSearchParams(data);
 // console.log(string);
 const Username = document.querySelector("#name");
 Username.innerHTML = `${string.get("fname")}`
+document.querySelector("#fill").innerHTML = `Your ${string.get("newsletter")} will be sent to <address>${string.get("email")}</address>.`;
 
 document.querySelector(".btn").addEventListener("click",()=>{
     window.location.href = 'index.html';

@@ -188,8 +188,18 @@ footer{
 #updates section h3{
     font-family: var(--font);
     font-size: 1.2rem;
-    font-weight: 600;
     
+}
+#override.view{
+    display: block !important;
+    color: red;
+    font-weight: bold;
+    font-weight: 600;
+    text-align: center;
+    font-family: var(--font);
+}
+#override{
+    display: none;
 }
 #updates section div ul{
     list-style-type: none;
@@ -459,4 +469,9 @@ label:hover{
        transform:scale(1.2)
     
     }
+}
+.seperate{
+    font-size: 1rem;
+    color: var(--text);
+    text-decoration: 1px solid underline;
 }

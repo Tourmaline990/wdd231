@@ -46,25 +46,28 @@ hero.append(img)
 hero.append(image)
 img.classList.add("hide")
 const api = "L6jLQsvH4IHiogOGNwHvK25hh2xq51LYp2Oaxjn0";
-const link = `https://api.nasa.gov/planetary/apod?api_key=L6jLQsvH4IHiogOGNwHvK25hh2xq51LYp2Oaxjn0`; //APOD
+const link = `https://api.nasa.gov/planetary/apod?api_key=L6jLQsvH4IHiogOGNwHvK25hh2xq51LYp2Oaxjn0`; //APOD API
 //Getdata(`https://images-api.nasa.gov/search?q=${"earth"}`); //QUERY 
 //Getdata(`https://api.nasa.gov/EPIC/api/natural/date/${date}?api_key=${api}`) //EPIC
+
 async function Getdata(url,DisplayFn,parent){
    try {
     const response = await fetch(url);
      if(response.ok){
         const data  =  await response.json();
-        console.log(data);
+       // console.log(data);
        DisplayFn(data,parent) ;
      }
      else{
-        throw new error(await response.text())
+        throw new Error(await response.text())
      }
    } 
    catch (error) {
      console.log(error);
-   } 
-
+     parent.innerHTML = `<p>Error Loading Data</p>`;
+      parent.id = "override";
+      parent.classList.toggle("view");
+  }    
 }
 // `https://eonet.gsfc.nasa.gov/api/v2.1/events?category=wildfires&limit=5&days=20&status=open
 //https://eonet.gsfc.nasa.gov/api/v2.1/categories
@@ -79,40 +82,38 @@ category.forEach(x => {
    if(x === 'Volcanoes'){
        container.innerHTML =`<h3> ${x} </h3>`;
        const box = document.createElement("div");
-  //     box.classList.toggle("hide");
+
        container.addEventListener("click",()=>{
          container.classList.toggle("show");
-         Getdata(`https://eonet.gsfc.nasa.gov/api/v2.1/categories/12`,ForVolcanoe,box);
+         Getdata(`https://eonet.gsfc.nasa.gov/api/v2.1/cateories/12`,ForVolcanoe,box);
          container.append(box);
        })
       }
    else if(x === "Wildfire"){
       container.innerHTML = `<h3> ${x} being tracked </h3>`;
       const box = document.createElement("div");
-   //   box.classList.toggle("hide");
+ 
       container.addEventListener("click",()=>{
          container.classList.toggle("show");
-         Getdata(`https://eonet.gsfc.nasa.gov/api/v2.1/events?category=wildfires&limit=25&days=20&status=open`,ForWildFire,box);
+         Getdata(`https://eonet.gsfc.nasa.gov/api/v2.1/events?category=wildfires&limit=25&days=20&status=open`,ForWildFire,box); 
          container.append(box);
        })
     }
     else if(x==="natural"){
        container.innerHTML = `<h3>Astronomy Picture Of the day</h3>`;
        const box = document.createElement("div");
-     //  box.classList.toggle("hide");
        container.addEventListener("click",()=>{
          container.classList.toggle("show");
-         Getdata(`https://api.nasa.gov/planetary/apod?api_key=L6jLQsvH4IHiogOGNwHvK25hh2xq51LYp2Oaxjn0`,DisplayAstro,box);
+         Getdata(`https://api.nasa.gov/planetary/apod?api_key=L6jLQsvH4IHiogOGNwHvK25hh2xq51LYp2Oaxjn0`,DisplayAstro,box); //APOD
          container.append(box);
        })
     }
     else if(x=== "ne"){
         container.innerHTML = `<h3>Near Earth Objects Detected</h3>`;
         const box = document.createElement("div");
-       // box.classList.toggle("hide");
         container.addEventListener("click",()=>{
          container.classList.toggle("show");
-         Getdata(`https://api.nasa.gov/neo/rest/v1/feed?start_date=${enddate}&end_date=${date}&api_key=${api}`,nearEarth,box);
+         Getdata(`https://api.nasa.gov/neo/rest/v1/feed?start_date=${enddate}&end_date=${date}&api_key=${api}`,nearEarth,box); // NEOWD
          container.append(box);
        })
     }
