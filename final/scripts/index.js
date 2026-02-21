@@ -85,7 +85,7 @@ category.forEach(x => {
 
        container.addEventListener("click",()=>{
          container.classList.toggle("show");
-         Getdata(`https://eonet.gsfc.nasa.gov/api/v2.1/cateories/12`,ForVolcanoe,box);
+         Getdata(`https://eonet.gsfc.nasa.gov/api/v2.1/categories/12`,ForVolcanoe,box);
          container.append(box);
        })
       }
